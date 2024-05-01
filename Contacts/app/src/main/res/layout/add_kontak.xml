@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="35dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:id="@+id/add_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/add_nomor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Nama" />
+        <EditText
+            android:layout_width="700px"
+            android:layout_height="wrap_content"
+            android:id="@+id/nm" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_nomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="No Hp" />
+        <EditText
+            android:layout_width="700px"
+            android:layout_height="wrap_content"
+            android:id="@+id/hp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
