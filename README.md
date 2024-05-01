@@ -1,1 +1,3 @@
-# mobile_programming_class
+# PPB
+
+Gabriel Solomon Sitanggang
