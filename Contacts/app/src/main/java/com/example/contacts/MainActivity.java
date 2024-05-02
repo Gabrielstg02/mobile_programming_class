@@ -91,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
         final EditText hp = (EditText) vAdd.findViewById(R.id.hp);
 
         buat.setView(vAdd);
-        // Set up the buttons
         buat.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -112,12 +111,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void deleteKontak(int position) {
-        // Get the contact at the specified position
         kontak contactToDelete = kAdapter.getItem(position);
         kAdapter.remove(contactToDelete);
         kAdapter.notifyDataSetChanged();
 
-        // Show a toast message to indicate that the contact has been deleted
         Toast.makeText(this, "Contact deleted", Toast.LENGTH_SHORT).show();
     }
 

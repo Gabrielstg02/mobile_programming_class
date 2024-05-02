@@ -55,14 +55,12 @@ public class MainActivity extends AppCompatActivity {
         if(resultCode == Activity.RESULT_OK){
             switch(requestCode){
                 case (kodekamera):
-                    // Notify the system that a new photo has been added
                     Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
                     File f = new File(nmFile);
                     Uri contentUri = Uri.fromFile(f);
                     mediaScanIntent.setData(contentUri);
                     sendBroadcast(mediaScanIntent);
 
-                    // Load the saved photo into a Bitmap and display it in the ImageView
                     Bitmap bm = BitmapFactory.decodeFile(nmFile);
                     iv.setImageBitmap(bm);
                     Toast.makeText(this, "Data Telah Terload ke ImageView" + nmFile, Toast.LENGTH_LONG).show();
